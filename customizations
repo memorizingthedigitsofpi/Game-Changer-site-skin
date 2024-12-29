@@ -1,0 +1,106 @@
+
+
+/* CUSTOMIZATION TIME!!! Use the below code to set the background colour and text colour for the site */
+
+/*  Hex colour codes:
+    white #fef7ef
+    black #220f09
+    orange #e05534
+    red #a4202d
+    purple #5b3751
+    teal #5e9790
+    yellow #f9a648
+
+    dark mode background used in this chapter: #4e3e3a  */
+
+
+/* default background colours everywhere */
+#outer,
+#modal,
+.listbox .index {
+background: #4e3e3a;
+}
+
+/* default colour for text and links everywhere */
+#main,
+#main a {
+color: #fef7ef;
+}
+
+ 
+
+/* removes white background from a couple of random spots plus in tables */
+div.dynamic,
+.reading h4.viewed,
+.comment h4.byline,
+table,
+th,
+dt.child,
+.own {
+background: transparent;
+}
+
+/* sets the background colour for unread comments in your inbox and on the homepage */
+.unread {
+background: #5b3751;
+}
+
+/* sets the text colour for comments, including the font title and author name */
+li.comment p,
+h4.heading.byline a {
+color: #fef7ef !important;
+}
+
+/* sets the background colour for every-other comment in a thread */
+.thread .even {
+background: #5b3751;
+}
+
+ 
+
+/* END OF DARK MODE */
+
+ 
+
+ 
+
+ 
+
+ 
+
+/* Here's a LIGHT MODE version with the slightly off-white background I used elsewhere */
+
+
+#outer,
+#modal,
+.listbox .index {
+  background: #fef7ef;
+}
+
+#main,
+#main a {
+  color: #220f09;
+}
+
+div.dynamic,
+.reading h4.viewed,
+.comment h4.byline,
+table,
+th,
+dt.child,
+.own {
+  background: transparent;
+}
+
+.unread {
+  background: #5e9790;
+}
+
+li.comment p,
+h4.heading.byline a {
+  color: #220f09 !important;
+}
+
+.thread .even {
+  background: #5e9790;
+}
