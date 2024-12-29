@@ -1,0 +1,429 @@
+/* Sets the header background to the Game Changer stripes  */
+#header {
+  background: url("https://i.imgur.com/VsMGuPi.png");
+  background-repeat: repeat;
+}
+
+/* Sets the height of the heading to be tall enough to show the full set of stripes  */
+#header .heading {
+  height: 5em;
+}
+
+/* Removes the AO3 logo and replaces it with the Game Changer logo  */
+#header h1.heading::before {
+  display: inline-block;
+  width: 70px;
+  height: 50px;
+  content: " ";
+  background: url("https://i.imgur.com/hYSLvo1.png");
+  background-size: 70px 50px;
+  vertical-align: sub;
+}
+
+#header .logo {
+  display: none;
+}
+
+/* Makes the words Archive of Our Own and beta invisible, but still leaves the space a clickable link to the homepage  */
+#header h1.heading span {
+  visibility: hidden;
+}
+
+#header .heading sup {
+  visibility: hidden;
+}
+
+
+/* sets the header bar background to white, removes the box shadow, applies a thick black border to the top and bottom  */
+#header .primary {
+  background: #fef7ef;
+  box-shadow: none;
+  border-top: 5px solid #220f09;
+  border-bottom: 5px solid #220f09;
+}
+
+/* sets the header bar titles to bolded black font in all caps, as well as the username, post, and logout titles. This also affects the text inside the dropdown menus  */
+#greeting .dropdown a,
+#header .actions a,
+#header .primary a {
+  color: #220f09;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+/* removes the search text box and button  */
+#header #search {
+  display: none;
+}
+
+/* removes your icon from next to Hi, username!   */
+#greeting img.icon {
+  visibility: hidden;
+}
+
+/* when you open up the dropdown menus in the header, there's a thick grey border around it and a box shadow around that. this gets rid of both of them  */
+#header .menu {
+  background: none;
+  box-shadow: none;
+}
+
+/* This removes the thin grey line between the listed items in the header dropdown menus  */
+#header .menu li {
+  border-bottom: none;
+}
+
+/* when you hover over the options in the header menu (including the log out button) this changes the background to orange  */
+#header .actions a:hover,
+#header .dropdown:hover a.dropdown-toggle {
+  background: #e05534;
+}
+
+/* Change the background colour of the items in the dropdown menu. Does the same thing for your Favourite Tags on the home page and for your works on your Statistics page  */
+#header .dropdown-menu li:nth-of-type(5n+1) a,
+.splash .favorite li:nth-of-type(5n+1) a,
+.statistics .index li:nth-of-type(5n+1) {
+  background-color: #e05534;
+}
+
+#header .dropdown-menu li:nth-of-type(5n+2) a,
+.splash .favorite li:nth-of-type(5n+2) a,
+.statistics .index li:nth-of-type(5n+2) {
+  background-color: #a4202d;
+}
+
+#header .dropdown-menu li:nth-of-type(5n+3) a,
+.splash .favorite li:nth-of-type(5n+3) a,
+.statistics .index li:nth-of-type(5n+3) {
+  background-color: #5b3751;
+}
+
+#header .dropdown-menu li:nth-of-type(5n+4) a,
+.splash .favorite li:nth-of-type(5n+4) a,
+.statistics .index li:nth-of-type(5n+4) {
+  background-color: #5e9790;
+}
+
+#header .dropdown-menu li:nth-of-type(5n+5) a,
+.splash .favorite li:nth-of-type(5n+5) a,
+.statistics .index li:nth-of-type(5n+5) {
+  background-color: #f9a648;
+}
+
+
+/* Changes the text colour of your Favourite Tags on the homepage to white, as well as the text within the works list on your Statistics page */
+.splash .favorite li a,
+.statistics .index li,
+.statistics .index li a {
+  color: #fef7ef !important;
+}
+
+
+/* When you hover over the menu items with a mouse, this changes the background to black and the text to white. Does the same for your Favourite Tags  */
+#greeting .dropdown .menu a:hover,
+#header .dropdown .menu li:hover a,
+.splash .favorite li:hover a,
+.splash .favorite li:nth-of-type(odd) a:hover {
+  background: #220f09;
+  color: #fef7ef !important;
+}
+
+/* Gives all buttons a black border and a white background. Does the same for Dashboard links  */
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+.actions input,
+input[type=submit],
+button,
+.actions label,
+#dashboard a {
+  background: #fef7ef;
+  color: #220f09 !important;
+  border-radius: 7px;
+  border: 3px solid #220f09;
+  box-shadow: none;
+}
+
+/* Gives the active button (the one indicating what page you are on) a white border and a black background. Ditto for the active Dashboard page  */
+.current,
+#dashboard .current {
+  background: #220f09;
+  color: #fef7ef !important;
+  border-radius: 7px;
+  border: 3px solid #fef7ef;
+  box-shadow: none;
+}
+
+/* Sets a black border and a white background for (line 1) the labels on forms, (line 2) the question mark help icon that you can see all over the site, and (the rest of the things) all of the message bubbles on the site that appear when you do something wrong or update a skin etc. */
+form.verbose legend,
+span.symbol.question,
+.notice,
+.comment_notice,
+.kudos_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.kudos_error,
+.alert.flash {
+  background: #fef7ef;
+  color: #220f09 !important;
+  border-radius: 7px;
+  border: 3px solid #220f09;
+  box-shadow: none;
+}
+
+/* If you've muted another user on the site, there is a message that pops up all the time that tells you that you've muted someone. This gets rid of that message  */
+p.muted.notice {
+display: none;
+}
+
+/* sets the background of the footer and forms to the Game Changer stripes - including the filters. Also removes the light grey border and the box shadow */
+#footer,
+fieldset,
+.dynamic form {
+  background: url("https://i.imgur.com/NgYKmwe.png");
+  background-repeat: repeat;
+border: none;
+box-shadow: none;
+}
+
+/* Sets the font colour in the footer to white and does the same thing for the text in forms and the filters */
+#footer h4.heading,
+#footer a,
+label,
+dt.required,
+.filters h4,
+.filters .expander,
+p.footnote a,
+.dynamic form,
+form p,
+form a {
+  color: #fef7ef !important;
+}
+
+/* removes the white background from behind the autocomplete in forms */
+div.autocomplete.dropdown {
+background: none;
+}
+
+/* once you've chosen something from an autocomplete menu, that text appears in the form above the box. this sets the text colour to white */
+.autocomplete li.added,
+.post .meta dd ul li.added {
+  color: #fef7ef !important;
+}
+
+/* once you've chosen something from an autocomplete menu, that text appears in the form above the box. Next to that text is a little circle with an X in the middle that allows you to delete that text. This sets the background of that circle to white and the x to black */
+.delete a {
+  background: #fef7ef;
+  color: #220f09 !important;
+}
+
+span.delete {
+  background: #fef7ef;
+  border: 2px solid #220f09;
+  box-shadow: none;
+}
+
+/* Forms have lots of dropdowns and places where you need to enter text. This gives them a white background and a rounded black border to match the buttons */
+input,
+textarea,
+select {
+  background: #fef7ef;
+  border: 3px solid #220f09;
+  border-radius: 7px;
+  box-shadow: none;
+}
+
+/* in the Advanced Search form, some of the input bubbles had a grey border on the top. This sets that border to black */
+form.search input[type="text"] {
+  border-top: 3px solid #220f09;
+}
+
+/* In the filter menu, there are a couple of spots where you can type stuff in. That text entry box went just past the edge of the page so you couldn't see the right-hand border of the box. This makes the box slightly less wide  */
+.autocomplete input,
+dd.search,
+dd.language {
+  max-width: 10em;
+}
+
+/* other areas of the site also have a grey box behind them. This changes those ones to the Game Changer stripes too */
+.listbox {
+  background: url("https://i.imgur.com/VsMGuPi.png");
+}
+
+/* For those areas, this sets the headings to white */
+.listbox > .heading,
+.listbox .heading a {
+  color: #fef7ef !important;
+}
+
+/* removes the box shadow */
+.listbox .index {
+box-shadow: none;
+}
+
+
+/* One of those areas is the Fandoms listings, and this sets the little arrow inside the button that sends you back to the top of the page to black */
+span.action.top a {
+  color: #220f09 !important;
+}
+
+/* Removes the grey background of some areas inside of forms as well as on your subscriptions page */
+fieldset fieldset,
+dl.index dd {
+  background: none;
+}
+
+/* puts a rounded black border around your profile info and around fic blurbs */
+dl.meta,
+li.blurb {
+  border: 3px solid #220f09;
+  border-radius: 7px;
+}
+
+/* removes box-shadows from places like your profile info box */
+.wrapper {
+  box-shadow: none;
+}
+
+/* Sam has been here THE WHOLE TIME */
+p.kudos {
+  background: url("https://i.imgur.com/vZPnZay.png") no-repeat;
+}
+
+/* sets your dashboard background to the Game Changer stripes. Also removes the red border from the top and bottom of it */
+#dashboard,
+#dashboard.own {
+  background: url("https://i.imgur.com/VsMGuPi.png");
+  border: none;
+}
+
+/* On a computer, the dashboard has some thin grey lines in between sections. This gets rid of those lines */
+#dashboard ul {
+  border: none;
+}
+
+/* gives drafts a semi-transparent white background and a thick black dashed border */
+.draft {
+  background: rgb(254, 247, 239, 0.25);
+  border: 3px dashed #220f09;
+}
+
+.draft .wrapper {
+  background: rgb(254, 247, 239, 0.25);
+}
+
+/* Removes the blue background and white border from the header on Collections */
+#header h2 {
+  background: none !important;
+  border: none;
+}
+
+/* sets an image for anonymous comments etc. */
+.comment .icon .anonymous,
+.comment .icon .visitor,
+.index .skins .icon,
+.index .mystery .icon,
+.index .tag .icon,
+.index .tagset .icon {
+  background: url("https://i.imgur.com/hYSLvo1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* removes the grey border from the bottom of icons in comments */
+.comment div.icon {
+  border-bottom: none;
+}
+
+/* gives icons rounded corners */
+.icon {
+  border-radius: 7px;
+}
+
+/* changes the unread button on comments in your inbox to a red background with white text and border */
+span.unread {
+background: #a4202d;
+color: #fef7ef;
+border: 3px solid #fef7ef;
+}
+
+/* changes the read button on comments in your inbox to a teal background with white checkmark and border */
+.replied {
+background: #5e9790;
+color: #fef7ef;
+border: 3px solid #fef7ef;
+}
+
+/* Sets the fandom tag color to orange */
+h5.fandoms.heading a,
+.fandom .tag,
+.work .fandom a.tag {
+  color: #e05534 !important;
+}
+
+/* sets the warning tag background to red and the text to white, removes the bold */
+.warnings .tag,
+.work .warning a.tag,
+dd.warning.tags a {
+  background: #a4202d;
+  color: #fef7ef !important;
+  font-weight: normal;
+}
+
+
+/* sets the relationship tag background to purple and the text to white */
+.relationships .tag,
+.work .relationships a.tag,
+dd.relationship.tags a {
+  background: #5b3751;
+  color: #fef7ef !important;
+}
+
+
+/* sets the character tags to teal */
+.characters .tag,
+.work .characters a.tag,
+dd.character.tags a {
+  color: #5e9790 !important;
+}
+
+
+/* sets the additional tags to yellow */
+.freeforms .tag,
+.work .freeforms a.tag,
+dd.freeform.tags a {
+  color: #f9a648 !important;
+}
+
+
+/* sets the Rating tag on an opened work page to yellow */
+dd.rating.tags a {
+  color: #f9a648 !important;
+}
+
+/* sets the Category tags on an opened work page to purple */
+dd.category.tags a {
+  color: #5b3751 !important;
+}
+
+
+/* when you hover over tags with your mouse, this sets the background to black and the text to white */
+.tags li.freeforms a.tag:hover,
+.tags li.characters a.tag:hover,
+.tags li.relationships a.tag:hover {
+  background-color: #220f09;
+  color: #fef7ef;
+}
+
+/* there are several headings on the AO3 homepage. This gives them a Game Changer background and sets the text to white */
+.splash .module h3 {
+  background: url("https://i.imgur.com/iMMlJ0c.png");
+  color: #fef7ef;
+}
+
+/* some of the text in those headers is links. this sets those to white too */
+.splash .module h3 a {
+  color: #fef7ef !important;
+}
