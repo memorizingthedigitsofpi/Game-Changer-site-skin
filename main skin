@@ -129,6 +129,7 @@
 
 /* Gives all buttons a black border and a white background. Does the same for Dashboard links  */
 .actions a,
+.actions button,
 .actions a:link,
 .action,
 .action:link,
